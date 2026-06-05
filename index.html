@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+
+  <style>
+    /* ---- BASIC RESET ---- */
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Georgia, serif;
+      background-color: #fff8f0;
+      color: #333;
+    }
+
+    /* ---- TOP MENU ---- */
+    nav {
+      background-color: #a5a5a5;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+
+    nav h1 {
+      color:white;
+      font-size: 22px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-size: 16px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* ---- HERO SECTION ---- */
+    .hero {
+      background-color: #deb7e7;
+      text-align: center;
+      padding: 80px 20px;
+    }
+
+    .hero h2 {
+      font-size: 48px;
+      color: #333;
+    }
+
+    .hero p {
+      font-size: 20px;
+      margin-top: 15px;
+      color: #555;
+    }
+
+    .hero button {
+      margin-top: 30px;
+      padding: 12px 30px;
+      background-color: #db52c4;
+      color: white;
+      border: none;
+      border-radius: 25px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .hero button:hover {
+      background-color: #e55a5a;
+    }
+
+    /* ---- ABOUT SECTION ---- */
+    .about {
+      background-color: #c3f0ca;
+      padding: 60px 30px;
+      text-align: center;
+    }
+
+    .about h2 {
+      font-size: 34px;
+      color: #2d6a4f;
+      margin-bottom: 15px;
+    }
+
+    .about p {
+      font-size: 18px;
+      max-width: 600px;
+      margin: 0 auto;
+      line-height: 1.8;
+      color: #444;
+    }
+
+    /* ---- SKILLS ---- */
+.skills {
+  background-color: #72c2f0;
+  padding: 60px 30px;
+  text-align: center;
+}
+.skills h2 {
+  font-size: 34px;
+  margin-bottom: 15px;
+   color: #0d69e2;
+  
+}
+.skills ul {
+  list-style: none;
+  padding: 0;
+}
+
+.skills li {
+  font-family: Georgia, serif;
+  background-color: white;
+  padding: 10px 20px;
+  font-size: 18px;
+  color: #444;
+  margin: 5px;
+  border-radius: 20px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+}
+/* Skills card colours */
+.skills .card:nth-child(1) { border-top: 5px solid #ff6b6b; }
+.skills .card:nth-child(2) { border-top: 5px solid #ffd93d; }
+.skills .card:nth-child(3) { border-top: 5px solid #6bcb77; }
+.skills .card:nth-child(4) { border-top: 5px solid #4d96ff; }
+.skills .card:nth-child(5) { border-top: 5px solid #9b5de5; }
+.skills .card:nth-child(6) { border-top: 5px solid #f15bb5; }
+
+/* ---- EDUCATION ---- */
+.education {
+  background-color: #fff;
+  padding: 60px 30px;
+  text-align: center;
+}
+    /* ---- PROJECTS SECTION ---- */
+    .projects {
+      background-color: #ffe8d6;
+      padding: 60px 30px;
+      text-align: center;
+    }
+
+    .projects h2 {
+      font-size: 34px;
+      color: #e07b39;
+      margin-bottom: 30px;
+    }
+
+    .cards {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .card {
+      background-color: white;
+      border-radius: 15px;
+      padding: 25px;
+      width: 250px;
+      box-shadow: 3px 3px 10px rgba(0,0,0,0.1);
+    }
+
+    .card h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      font-size: 15px;
+      color: #666;
+    }
+
+    /* Different card top colours */
+    .card:nth-child(1) { border-top: 5px solid #ff6b6b; }
+    .card:nth-child(2) { border-top: 5px solid #ffd93d; }
+    .card:nth-child(3) { border-top: 5px solid #6bcb77; }
+
+    /* ---- CONTACT SECTION ---- */
+    .contact {
+      background-color: #a8dadc;
+      padding: 60px 30px;
+      text-align: center;
+    }
+
+    .contact h2 {
+      font-size: 34px;
+      color: #1d3557;
+      margin-bottom: 15px;
+    }
+
+    .contact p {
+      font-size: 18px;
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    .contact a {
+      display: inline-block;
+      margin: 8px;
+      padding: 12px 25px;
+      background-color: #075c75;
+      color: white;
+      border-radius: 25px;
+      text-decoration: none;
+      font-size: 16px;
+    }
+
+    .contact a:hover {
+      background-color: #457b9d;
+    }
+
+    /* ---- FOOTER ---- */
+    footer {
+      background-color: #9e9b9b;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- TOP MENU -->
+  <nav>
+    <h1>Aluwani Abigail Sibanda</h1>
+    <div>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+      <a href="#learning">What I'm Learning</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <h2>Hi, I'm Aluwani Abigail! </h2>
+    <p>I'm learning to build websites with HTML, CSS and JavaScript.</p>
+
+    <button id="helloBtn">Say Hello</button>
+    <p id="message"></p>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <h2>About Me </h2>
+    <p>
+      <p>
+     My name is Aluwani Abigail Sibanda. I am an IT student with an interest in web development and technology.<br>
+     I enjoy learning new skills and building projects that help me grow as a developer.
+</p>
+    </p>
+
+  <section class="skills">
+  <h2><h2>What I'm Learning</h2></h2>
+
+  <div class="cards">
+
+    <div class="card">
+      <h3>Web Technologies</h3>
+      <p>Learning how to create and design websites using HTML, CSS, and JavaScript.</p>
+    </div>
+
+    <div class="card">
+      <h3>Programming</h3>
+      <p>Developing problem-solving skills and building applications using Python.</p>
+    </div>
+
+    <div class="card">
+      <h3>Networks</h3>
+      <p>Understanding how computers communicate and share information across networks.</p>
+    </div>
+
+    <div class="card">
+      <h3>Information Systems</h3>
+      <p>Studying how technology is used to manage and support business operations.</p>
+    </div>
+
+    <div class="card">
+      <h3>Computer Science</h3>
+       <p>Learning the fundamentals of computing, algorithms, and software development.</p>
+    </div>
+
+    <div class="card">
+      <h3>Mathematics</h3>
+      <p>Applying mathematical concepts and logical thinking to solve computing problems.</p>
+    </div>
+
+  </div>
+</section>
+
+  <!-- PROJECTS -->
+  <section class="projects" id="projects">
+    <h2>My Projects </h2>
+    <div class="cards">
+
+      <div class="card">
+        <h3> Portfolio</h3>
+        <p>A personal portfolio website showcasing my skills, projects, and contact information.</p>
+      </div>
+
+      <div class="card">
+        <h3> To-Do List</h3>
+        <p>A task management application that allows users to add and organize daily activities.</p>
+      </div>
+
+      <div class="card">
+        <h3> Colour Quiz</h3>
+        <p>An interactive quiz designed to test colour knowledge and user interaction skills.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <h2>Contact Me </h2>
+    <p>Feel free to contact me or view my projects using the links below.</p>
+    <a href="https://github.com/Aluwani877" target="_blank">GitHub</a>
+    <a href="mailto:aluwaniabigail07@gmail.com"> Email Me</a>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2024 Aluwani Abigail Sibanda. All Rights Reserved.</p>
+  </footer>
+
+   <script>
+    // Show a welcome message when the page loads
+    window.onload = function() {
+      console.log("Welcome to my portfolio website!");
+    };
+
+    // Get all project cards
+    const cards = document.querySelectorAll(".card");
+
+    cards.forEach(function(card) {
+      card.onmouseover = function() {
+        card.style.transform = "scale(1.05)";
+        card.style.transition = "transform 0.2s";
+      };
+      card.onmouseout = function() {
+        card.style.transform = "scale(1)";
+      };
+      card.onmouseout = function() {
+    card.style.transform = "scale(1)";
+  };
+});
+
+      // Show thank you message
+document.getElementById("helloBtn").onclick = function() {
+  document.getElementById("message").innerHTML =
+  "Thank you for visiting my portfolio!";
+};
+      // Find the button
+    const helloButton = document.querySelector("button");
+
+    // Show message when button is clicked
+helloButton.onclick = function() {
+    alert("Thank you for visiting my portfolio!");
+};
+
+// Show current year in footer automatically
+const footer = document.querySelector("footer p");
+footer.innerHTML = "©" getFullYear() + " Aluwani Abigail Sibanda. All Rights Reserved.";
+
+    
+  </script>
+  
+
+</body>
+</html>
